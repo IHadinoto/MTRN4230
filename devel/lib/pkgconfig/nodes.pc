@@ -1,0 +1,8 @@
+prefix=/home/mtrn4230/major-project-mtrn4230_h12a_momsfriendlyrobotcompany/devel
+
+Name: nodes
+Description: Description of nodes
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

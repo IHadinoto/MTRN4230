@@ -1,0 +1,2 @@
+camera_package:lab09_gazebo:nodes:ur5e_epick_moveit_config:ur_description:ur_kinematics
+-DCATKIN_DEVEL_PREFIX=/home/mtrn4230/major-project-mtrn4230_h12a_momsfriendlyrobotcompany/devel -DCMAKE_INSTALL_PREFIX=/home/mtrn4230/major-project-mtrn4230_h12a_momsfriendlyrobotcompany/install -G Unix Makefiles

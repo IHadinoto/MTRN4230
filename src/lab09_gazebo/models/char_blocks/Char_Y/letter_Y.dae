@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.93.2 commit date:2021-08-03, commit time:05:58, hash:1eb06de2607a</authoring_tool>
+    </contributor>
+    <created>2021-08-17T15:06:37</created>
+    <modified>2021-08-17T15:06:37</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="WHITE-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">1 1 1 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">1 1 1 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="BLACK-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0 0 0 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="WHITE-material" name="WHITE">
+      <instance_effect url="#WHITE-effect"/>
+    </material>
+    <material id="BLACK-material" name="BLACK">
+      <instance_effect url="#BLACK-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="letter_Y-mesh" name="letter_Y">
+      <mesh>
+        <source id="letter_Y-mesh-positions">
+          <float_array id="letter_Y-mesh-positions-array" count="108">20.36425 26.68092 20 24.01058 26.68092 20 30 30 20 30 0 20 16.64778 12.02544 20 16.64778 3.680925 20 0 0 20 13.00144 3.680925 20 13.00144 11.95093 20 0 30 20 5.358146 26.68092 20 9.565463 26.68092 20 14.93856 15.39129 20 14.98238 15.39129 20 14.65049 16.17465 20 15.22481 16.17799 20 14.36882 16.96027 20 15.56089 16.92959 20 30 0 0 30 30 0 0 0 0 0 30 0 20.36425 26.68092 19.8 24.01058 26.68092 19.8 16.64778 12.02544 19.8 16.64778 3.680925 19.8 13.00144 3.680925 19.8 13.00144 11.95093 19.8 5.358146 26.68092 19.8 9.565463 26.68092 19.8 14.36882 16.96027 19.8 14.93856 15.39129 19.8 14.65049 16.17465 19.8 14.98238 15.39129 19.8 15.56089 16.92959 19.8 15.22481 16.17799 19.8</float_array>
+          <technique_common>
+            <accessor source="#letter_Y-mesh-positions-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="letter_Y-mesh-normals">
+          <float_array id="letter_Y-mesh-normals-array" count="87">0 0 1 -2.83826e-7 0 1 -1.56483e-7 0 1 1.13963e-6 0 1 1 0 0 0 -1 0 -1 0 0 0 1 0 0 0 -1 -0.8935732 0.4489176 0 -0.8935694 0.4489252 0 0.887617 0.4605823 0 0.8876208 0.4605749 0 -0.8965206 -0.4430021 0 -0.8965204 -0.4430025 0 -0.9385519 -0.3451385 0 -0.9385513 -0.3451396 0 -0.9413258 -0.3374994 0 -0.941327 -0.3374958 0 0.9128928 -0.4081996 0 0.9128909 -0.4082039 0 0.9556547 -0.2944896 0 0.955655 -0.294489 0 0.8970735 -0.4418815 0 0.8970733 -0.4418817 0 4.46751e-7 0 1 7.73741e-7 0 1 8.97102e-7 0 1 1.00298e-6 0 1</float_array>
+          <technique_common>
+            <accessor source="#letter_Y-mesh-normals-array" count="29" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="letter_Y-mesh-vertices">
+          <input semantic="POSITION" source="#letter_Y-mesh-positions"/>
+        </vertices>
+        <triangles material="WHITE-material" count="56">
+          <input semantic="VERTEX" source="#letter_Y-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#letter_Y-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 2 0 1 0 3 0 1 0 4 0 3 0 3 0 4 0 5 0 3 0 5 0 6 0 5 0 7 0 6 0 6 1 7 1 8 1 6 2 8 2 9 2 9 3 8 3 10 3 9 0 10 0 11 0 12 0 13 0 14 0 14 0 13 0 15 0 14 0 15 0 16 0 16 0 15 0 17 0 16 0 17 0 11 0 11 0 17 0 0 0 11 0 0 0 9 0 9 0 0 0 2 0 18 4 19 4 3 4 3 4 19 4 2 4 20 5 18 5 6 5 6 5 18 5 3 5 21 6 20 6 9 6 9 6 20 6 6 6 19 7 21 7 2 7 2 7 21 7 9 7 20 8 21 8 18 8 18 8 21 8 19 8 22 5 23 5 0 5 0 5 23 5 1 5 23 9 24 9 1 9 1 10 24 10 4 10 24 6 25 6 4 6 4 6 25 6 5 6 25 7 26 7 5 7 5 7 26 7 7 7 26 4 27 4 7 4 7 4 27 4 8 4 27 11 28 11 8 11 8 12 28 12 10 12 28 5 29 5 10 5 10 5 29 5 11 5 29 13 30 13 11 13 11 14 30 14 16 14 31 15 12 15 14 15 31 16 14 16 32 16 32 17 14 17 16 17 32 18 16 18 30 18 31 5 33 5 12 5 12 5 33 5 13 5 34 19 17 19 15 19 34 20 15 20 35 20 35 21 15 21 13 21 35 22 13 22 33 22 34 23 22 23 17 23 17 24 22 24 0 24</p>
+        </triangles>
+        <triangles material="BLACK-material" count="12">
+          <input semantic="VERTEX" source="#letter_Y-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#letter_Y-mesh-normals" offset="1"/>
+          <p>24 0 23 0 22 0 22 25 34 25 24 25 24 26 34 26 35 26 24 27 35 27 33 27 33 0 31 0 24 0 24 0 31 0 27 0 24 28 27 28 25 28 25 0 27 0 26 0 29 0 28 0 30 0 30 0 28 0 27 0 30 0 27 0 32 0 32 0 27 0 31 0</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="letter_Y" name="letter_Y" type="NODE">
+        <matrix sid="transform">10e-4 0 0 0 0 10e-4 0 0 0 0 10e-4 0 0 0 0 1</matrix>
+        <instance_geometry url="#letter_Y-mesh" name="letter_Y">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="WHITE-material" target="#WHITE-material"/>
+              <instance_material symbol="BLACK-material" target="#BLACK-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

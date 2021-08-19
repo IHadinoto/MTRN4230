@@ -1,0 +1,8 @@
+prefix=/home/mtrn4230/major-project-mtrn4230_h12a_momsfriendlyrobotcompany/devel
+
+Name: lab09_gazebo
+Description: Description of lab09_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: moveit_core moveit_ros_planning_interface

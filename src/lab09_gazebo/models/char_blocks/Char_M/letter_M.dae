@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.93.2 commit date:2021-08-03, commit time:05:58, hash:1eb06de2607a</authoring_tool>
+    </contributor>
+    <created>2021-08-17T14:54:22</created>
+    <modified>2021-08-17T14:54:22</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="WHITE-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">1 1 1 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">1 1 1 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="BLACK-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0 0 0 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="WHITE-material" name="WHITE">
+      <instance_effect url="#WHITE-effect"/>
+    </material>
+    <material id="BLACK-material" name="BLACK">
+      <instance_effect url="#BLACK-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="letter_M-mesh" name="letter_M">
+      <mesh>
+        <source id="letter_M-mesh-positions">
+          <float_array id="letter_M-mesh-positions-array" count="216">30 0 20 26.52597 4.281451 20 23.03816 4.281451 20 13.64792 4.281451 20 7.057978 20.2784 20 6.386457 20.4067 20 8.013772 26.28145 20 30 30 20 0 30 20 6.404015 22.79365 20 6.320173 22.79365 20 6.5175 22.26134 20 6.82541 20.99768 20 0 0 20 15.79426 4.281451 20 6.404015 18.01888 20 6.404015 4.281451 20 3.184503 4.281451 20 3.184503 26.28145 20 23.3903 22.79365 20 23.30645 22.79365 20 23.31766 22.24258 20 23.00107 21.5902 20 23.1069 20.17783 20 22.72478 20.67482 20 22.62315 20.40836 20 23.03816 18.40036 20 26.52597 26.28145 20 21.96499 26.28145 20 15.84456 11.78107 20 13.83656 11.73915 20 15.32368 10.35146 20 14.74205 8.909501 20 14.83847 8.909501 20 14.68226 9.180783 20 14.35282 10.34434 20 30 0 0 30 30 0 0 0 0 0 30 0 26.52597 4.281451 19.8 23.03816 4.281451 19.8 23.03816 18.40036 19.8 23.3903 22.79365 19.8 23.31766 22.24258 19.8 23.1069 20.17783 19.8 23.30645 22.79365 19.8 22.62315 20.40836 19.8 22.72478 20.67482 19.8 23.00107 21.5902 19.8 15.79426 4.281451 19.8 13.64792 4.281451 19.8 7.057978 20.2784 19.8 6.404015 22.79365 19.8 6.5175 22.26134 19.8 6.82541 20.99768 19.8 6.320173 22.79365 19.8 6.404015 18.01888 19.8 6.386457 20.4067 19.8 6.404015 4.281451 19.8 3.184503 4.281451 19.8 3.184503 26.28145 19.8 8.013772 26.28145 19.8 13.83656 11.73915 19.8 14.74205 8.909501 19.8 14.68226 9.180783 19.8 14.35282 10.34434 19.8 14.83847 8.909501 19.8 15.84456 11.78107 19.8 15.32368 10.35146 19.8 21.96499 26.28145 19.8 26.52597 26.28145 19.8</float_array>
+          <technique_common>
+            <accessor source="#letter_M-mesh-positions-array" count="72" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="letter_M-mesh-normals">
+          <float_array id="letter_M-mesh-normals-array" count="168">0 0 1 -4.62538e-6 0 1 -8.71196e-7 0 1 1 0 0 0 -1 0 -1 0 0 0 1 0 0 0 -1 0.9914247 -0.1306795 0 0.9948306 -0.1015489 0 0.994831 -0.1015448 0 0.999253 -0.03864395 0 0.9992532 -0.0386421 0 -0.9343397 0.356384 0 -0.9343452 0.3563694 0 -0.957341 0.2889607 0 -0.9573426 0.2889552 0 -0.9692808 0.2459571 0 -0.9692799 0.2459608 0 -0.9208455 0.3899279 0 -0.9208454 0.3899279 0 0.9246178 0.3808962 0 0.9246178 0.3808961 0 0.978021 0.2085064 0 0.9780198 0.2085121 0 0.9715738 0.236737 0 0.971574 0.2367362 0 0.9514973 0.3076571 0 0.9514985 0.3076534 0 -0.999973 -0.007352471 0 -0.999973 -0.007353067 0 -0.9996147 -0.02775883 0 -0.9996147 -0.02775877 0 -0.9283463 -0.3717164 0 -0.9283491 -0.3717095 0 -0.9765607 -0.2152426 0 -0.9765625 -0.2152344 0 -0.9621789 -0.2724187 0 -0.9621783 -0.2724205 0 -0.9378232 -0.3471134 0 -0.9378212 -0.347119 0 0.9395769 -0.342338 0 0.9395765 -0.3423393 0 0.9477815 -0.3189208 0 0.9477792 -0.3189274 0 0.9212941 -0.3888667 0 2.02302e-6 0 1 -1.05183e-6 0 1 -1.5226e-6 0 1 1.05268e-6 0 1 -1.33024e-5 0 1 -1.42366e-6 0 1 -5.41568e-6 0 1 9.27419e-7 0 1 1.20336e-6 0 1 4.93945e-6 0 1</float_array>
+          <technique_common>
+            <accessor source="#letter_M-mesh-normals-array" count="56" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="letter_M-mesh-vertices">
+          <input semantic="POSITION" source="#letter_M-mesh-positions"/>
+        </vertices>
+        <triangles material="WHITE-material" count="110">
+          <input semantic="VERTEX" source="#letter_M-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#letter_M-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 3 1 4 1 5 1 6 0 7 0 8 0 9 0 10 0 11 0 11 0 10 0 5 0 11 0 5 0 12 0 12 0 5 0 4 0 13 0 14 0 3 0 5 0 15 0 3 0 3 0 15 0 16 0 3 0 16 0 13 0 13 0 16 0 17 0 13 0 17 0 8 0 8 2 17 2 18 2 8 0 18 0 6 0 19 0 20 0 21 0 21 0 20 0 22 0 21 0 22 0 23 0 22 0 24 0 23 0 23 0 24 0 25 0 23 0 25 0 26 0 26 0 25 0 14 0 26 0 14 0 2 0 2 0 14 0 13 0 2 0 13 0 0 0 1 0 0 0 27 0 27 0 0 0 7 0 27 0 7 0 28 0 28 0 7 0 6 0 28 0 6 0 29 0 29 0 6 0 30 0 29 0 30 0 31 0 32 0 33 0 34 0 34 0 33 0 31 0 34 0 31 0 35 0 35 0 31 0 30 0 36 3 37 3 0 3 0 3 37 3 7 3 38 4 36 4 13 4 13 4 36 4 0 4 39 5 38 5 8 5 8 5 38 5 13 5 37 6 39 6 7 6 7 6 39 6 8 6 38 7 39 7 36 7 36 7 39 7 37 7 40 6 41 6 1 6 1 6 41 6 2 6 41 3 42 3 2 3 2 3 42 3 26 3 43 8 19 8 21 8 43 8 21 8 44 8 44 9 21 9 23 9 44 10 23 10 45 10 45 11 23 11 26 11 45 12 26 12 42 12 43 6 46 6 19 6 19 6 46 6 20 6 47 13 25 13 24 13 47 14 24 14 48 14 48 15 24 15 22 15 48 16 22 16 49 16 49 17 22 17 20 17 49 18 20 18 46 18 47 19 50 19 25 19 25 20 50 20 14 20 50 6 51 6 14 6 14 6 51 6 3 6 51 21 52 21 3 21 3 22 52 22 4 22 53 23 9 23 11 23 53 24 11 24 54 24 54 25 11 25 12 25 54 26 12 26 55 26 55 27 12 27 4 27 55 28 4 28 52 28 53 6 56 6 9 6 9 6 56 6 10 6 57 29 15 29 5 29 57 30 5 30 58 30 58 31 5 31 10 31 58 32 10 32 56 32 57 5 59 5 15 5 15 5 59 5 16 5 59 6 60 6 16 6 16 6 60 6 17 6 60 3 61 3 17 3 17 3 61 3 18 3 61 4 62 4 18 4 18 4 62 4 6 4 62 33 63 33 6 33 6 34 63 34 30 34 64 35 32 35 34 35 64 36 34 36 65 36 65 37 34 37 35 37 65 38 35 38 66 38 66 39 35 39 30 39 66 40 30 40 63 40 64 4 67 4 32 4 32 4 67 4 33 4 68 41 29 41 31 41 68 42 31 42 69 42 69 43 31 43 33 43 69 44 33 44 67 44 68 45 70 45 29 45 29 45 70 45 28 45 70 4 71 4 28 4 28 4 71 4 27 4 71 5 40 5 27 5 27 5 40 5 1 5</p>
+        </triangles>
+        <triangles material="BLACK-material" count="30">
+          <input semantic="VERTEX" source="#letter_M-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#letter_M-mesh-normals" offset="1"/>
+          <p>60 0 59 0 61 0 61 0 59 0 57 0 41 0 40 0 42 0 42 0 40 0 71 0 42 0 71 0 45 0 45 0 71 0 44 0 57 46 58 46 61 46 61 47 58 47 56 47 61 0 56 0 62 0 62 0 56 0 53 0 62 48 53 48 54 48 68 0 69 0 50 0 50 49 69 49 67 49 50 0 67 0 51 0 51 0 67 0 64 0 51 50 64 50 65 50 48 0 49 0 70 0 70 51 49 51 46 51 70 0 46 0 71 0 71 0 46 0 43 0 71 0 43 0 44 0 65 52 66 52 51 52 51 53 66 53 63 53 51 0 63 0 52 0 52 0 63 0 62 0 52 0 62 0 55 0 55 0 62 0 54 0 68 0 50 0 70 0 70 54 50 54 47 54 70 55 47 55 48 55</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="letter_M" name="letter_M" type="NODE">
+        <matrix sid="transform">10e-4 0 0 0 0 10e-4 0 0 0 0 10e-4 0 0 0 0 1</matrix>
+        <instance_geometry url="#letter_M-mesh" name="letter_M">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="WHITE-material" target="#WHITE-material"/>
+              <instance_material symbol="BLACK-material" target="#BLACK-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

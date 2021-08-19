@@ -1,0 +1,36 @@
+<launch>
+  <node
+    pkg="nodes"
+    type="movement"
+    name="movement"
+    output="screen"
+  />
+
+  <node
+    pkg="nodes"
+    type="environment"
+    name="environment"
+    output="screen"
+  />
+
+  <node
+    pkg="nodes"
+    type="character_detection"
+    name="character_detection"
+    output="screen"
+  />
+
+  <node
+    pkg="nodes"
+    type="positions_listener"
+    name="positions_listener"
+    output="screen"
+  />
+
+  <node
+    pkg="nodes"
+    type="image_listener"
+    name="image_listener"
+    output="screen"
+  />
+</launch> 

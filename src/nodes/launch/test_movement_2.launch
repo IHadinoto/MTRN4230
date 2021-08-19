@@ -1,0 +1,8 @@
+<launch>
+  <node
+    pkg="nodes"
+    type="test_movement_2"
+    name="test_movement_2"
+    output="screen"
+  />
+</launch> 

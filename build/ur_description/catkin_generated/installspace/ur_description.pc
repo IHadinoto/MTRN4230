@@ -1,0 +1,8 @@
+prefix=/home/mtrn4230/major-project-mtrn4230_h12a_momsfriendlyrobotcompany/install
+
+Name: ur_description
+Description: Description of ur_description
+Version: 1.2.5
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

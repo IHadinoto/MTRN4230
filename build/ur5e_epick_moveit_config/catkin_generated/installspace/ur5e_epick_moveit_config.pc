@@ -1,0 +1,8 @@
+prefix=/home/mtrn4230/major-project-mtrn4230_h12a_momsfriendlyrobotcompany/install
+
+Name: ur5e_epick_moveit_config
+Description: Description of ur5e_epick_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

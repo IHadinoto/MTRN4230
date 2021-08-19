@@ -1,0 +1,15 @@
+<launch>
+  <node
+    pkg="nodes"
+    type="user_IO"
+    name="user_IO"
+    output="screen"
+  />
+
+  <node
+    pkg="nodes"
+    type="demo_IO"
+    name="demo_IO"
+    output="screen"
+  />
+</launch> 

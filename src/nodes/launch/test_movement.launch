@@ -1,0 +1,36 @@
+<launch>
+  <node
+    pkg="nodes"
+    type="controller"
+    name="controller"
+    output="screen"
+  />
+
+  <node
+    pkg="nodes"
+    type="user_IO"
+    name="user_IO"
+    output="screen"
+  />
+
+  <node
+    pkg="nodes"
+    type="test_controller_camera"
+    name="test_controller_camera"
+    output="screen"
+  />
+
+  <node
+    pkg="nodes"
+    type="movement"
+    name="movement"
+    output="screen"
+  />
+
+  <node
+    pkg="nodes"
+    type="test_controller_environment"
+    name="test_controller_environment"
+    output="screen"
+  />
+</launch> 

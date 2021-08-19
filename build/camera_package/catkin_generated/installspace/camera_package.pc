@@ -1,0 +1,8 @@
+prefix=/home/mtrn4230/major-project-mtrn4230_h12a_momsfriendlyrobotcompany/install
+
+Name: camera_package
+Description: Description of camera_package
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,43 @@
+<launch>
+  <node
+    pkg="nodes"
+    type="controller"
+    name="controller"
+    output="screen"
+  />
+
+  <node
+    pkg="nodes"
+    type="user_IO"
+    name="user_IO"
+    output="screen"
+  />
+
+  <node
+    pkg="nodes"
+    type="movement"
+    name="movement"
+    output="screen"
+  />
+
+  <node
+    pkg="nodes"
+    type="environment"
+    name="environment"
+    output="screen"
+  />
+
+  <node
+    pkg="nodes"
+    type="character_detection"
+    name="character_detection"
+    output="screen"
+  />
+
+  <node
+    pkg="nodes"
+    type="character_recognition"
+    name="character_recognition"
+    output="screen"
+  />
+</launch> 
