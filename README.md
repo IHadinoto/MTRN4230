@@ -1,7 +1,7 @@
 # major-project
 Overall template repository for all major project code and descriptions for MTRN4230 at UNSW
 
-Group / Company name: <Insert your company name here>
+Group / Company name: Mom's Friendly Robot Company
 
 The major project for MTRN4230 is a chance to simulate and implement an industrial robot system. Working in groups, define an application of your choosing that includes at least one robot manipulator and a vision system. Implement this in simulation and include a demonstration using the real UR5e (with a [ePick vacuum gripper](https://www.universal-robots.com/plus/urplus-components/handling-grippers/epick/) installed) and camera system. Feel free to bring or make your own props. Examples of tasks previous teams have completed:
  - Sorting and loading chocolates into boxes
