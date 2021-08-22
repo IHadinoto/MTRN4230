@@ -76,23 +76,26 @@ sudo apt install tesseract-ocr
 sudo apt install libtesseract-dev
 ```
 
+To code character_recognition.cpp:
+```
+cd ~/group_project_ws/src/nodes/src
+code character_recognition.cpp
+```
+
 Finalise everything by running the following commands:
 
 ```
 cd ~/group_project_ws/
 catkin_make
 source devel/setup.bash
-```
-
-To run our code package:
-
-```
 roslaunch lab09_gazebo demo.launch
 ```
 
 Then, open a new tab with ctrl+shift+t:
 
 ```
+cd ~/group_project_ws/
+catkin_make
 source devel/setup.bash
 roslaunch nodes integrated.launch
 ```
